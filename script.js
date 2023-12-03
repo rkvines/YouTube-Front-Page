@@ -8,19 +8,7 @@ const SearchBTN = document.getElementById("search_btn_?"),
     Media_Search = document.getElementById("media_search");
 
 
-// Search Btn Proccess 
-SearchBTN.addEventListener("click" , () => {
-    
-    // Check Search
-    if (Search_Input == "Carryminati") {
-        OtherVideos.style.display = 'none'
-        CarryMinatiVideos.style.display = 'block'
-    }
-    else {
-        alert("please search type is correct !")
-    }
 
-} )
 
 Media_Search.addEventListener("click" , () => {
     let a = promot(" Search On YouTube ");

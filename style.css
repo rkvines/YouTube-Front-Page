@@ -1,0 +1,315 @@
+/*  import Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+/* Logo Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Uneversal Item Style Here */
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all ease 0.2s;
+}
+
+
+
+/* Root Element Here */
+/* All Of The Color , etc stylling Here To Create root Element */
+:root {
+    --body--background-color: #0f0f0f;
+    --logo-icon-color: #ff0000;
+    --nav-item-box-background-color: #272727;
+    --nav-item-box-hover-color: #f1f1f1;
+    --nav-font-color: #dddddd;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--body--background-color);
+}
+
+
+/* All Cursor Pointer Style Here */
+li,
+button,
+.logo,
+a,
+i,
+img,
+.search_box_content {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+#media_search,
+#media_mic {
+    display: none;
+}
+
+
+/* Header Design */
+header {
+    width: 100%;
+    padding: 0px;
+    position: sticky;
+    background: #0f0f0ffb;
+    z-index: 99;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1px 25px;
+}
+
+nav .logo {
+    color: var(--nav-font-color);
+    display: flex;
+    align-items: center;
+}
+
+nav .logo i {
+    color: var(--logo-icon-color);
+    font-size: 250%;
+    background: transparent;
+}
+
+nav .logo h3 {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav .logo h3 span {
+    color: white;
+    font-weight: normal;
+    font-size: 10px;
+    transform: translate(0%, -10%);
+    position: absolute;
+}
+
+nav .search_box {
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid var(--nav-item-box-background-color);
+    width: 600px;
+    overflow: hidden;
+}
+
+nav .search_box_content {
+    display: flex;
+}
+
+
+
+#mike {
+    position: absolute;
+    transform: translate(-30%, -5%);
+    color: var(--nav-item-box-hover-color);
+    background: var(--nav-item-box-background-color);
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#mike:hover {
+    background: #434343;
+}
+
+nav .search_box input {
+    padding: 8px;
+    width: 515px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--nav-font-color);
+    font-size: 20px;
+    position: relative;
+    margin: 3px;
+}
+
+nav .search_box_icons_enter {
+    width: 100px;
+    border-radius: 0% 100% 100% 0% / 0% 100% 100% 0%;
+    background: var(--nav-item-box-background-color);
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+nav .search_box_content i {
+    color: var(--nav-font-color);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
+
+nav .user_items ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .user_items ul li {
+    list-style: none;
+    color: var(--nav-font-color);
+    font-size: 26px;
+    /* margin: 0px 10px; */
+    font-weight: normal;
+}
+
+nav .user_items ul li {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav .user_items ul li:hover {
+    background: var(--nav-item-box-background-color)
+}
+
+nav .user_items ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+/* Ctaegories Nav Design Here */
+.categeries_nav {
+    display: flex;
+}
+
+.categeries_nav ul {
+    display: flex;
+}
+
+.categeries_nav ul li {
+    background: var(--nav-item-box-background-color);
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--nav-font-color);
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.categeries_nav ul li:hover {
+    background: var(--nav-font-color);
+    color: black;
+}
+
+#active_cate_nav_li {
+    color: black;
+    background: var(--nav-font-color);
+}
+
+#fed_cate_nav_style_here {
+    color: blue;
+    background: transparent;
+}
+
+#fed_cate_nav_style_here:hover {
+    background: var(--nav-item-box-background-color);
+}
+
+/* Videos Content DEsign Here */
+.main {
+    height: auto;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.videos_section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.video_box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 2px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video_box:hover {
+    background: var(--nav-item-box-background-color);
+}
+
+.video_box:hover img {
+    border-radius: 0;
+}
+
+.video_box:hover .channel_logo img {
+    scale: 1.5;
+}
+
+.video_box:hover .videos_descri_and_dtl {
+    z-index: 2;
+}
+
+.video_box img {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.video_box .videos_dtl {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.video_box .videos_dtl .channel_logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.videos_descri_and_dtl {
+    padding: 10px 25px;
+}
+
+
+#video_caption {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#video_channel_name,
+#video_views {
+    color: #9d9696;
+}
